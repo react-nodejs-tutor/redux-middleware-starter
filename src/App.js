@@ -16,8 +16,8 @@ class App extends Component {
 	}
 }
 export default connect(
-	({ counter }) => ({
-		number: counter.number
+	state => ({
+		number: state.counter
 	}),
 	{
 		increment,
